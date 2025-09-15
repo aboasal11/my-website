@@ -18,6 +18,12 @@
         <a href="#contact">Contact</a>
        </nav>
        <div class="header-actions">
+           <select id="lang-select" aria-label="Select language">
+               <option value="en">English</option>
+               <option value="ar">العربية</option>
+               <option value="de">Deutsch</option>
+               <option value="ja">日本語</option>
+           </select>
            <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
        </div>
     </header>
@@ -26,9 +32,9 @@
     <!-- -------------------------- strat main -------------------------- -->
      <section class="main">
         <div>
-            <h2>Hello i'm Mohammed Asal <br><span>Ethical Hacker</span></h2>
-            <h3>Your security is my mission</h3>
-            <a href="#projects" class="workbut">See My work</a>
+            <h2 data-i18n="hero_title">Hello i'm Mohammed Asal <br><span data-i18n="hero_span">Ethical Hacker</span></h2>
+            <h3 data-i18n="hero_sub">Your security is my mission</h3>
+            <a href="#projects" class="workbut" data-i18n="cta_work">See My work</a>
             <div class="social-media">
                 <a href="#" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
                 <a href="https://youtube.com/@cybercode01?si=5NbQPD0jM_kaiOyp" target="_blank"><i class="fa-brands fa-youtube"></i></a>
@@ -40,72 +46,72 @@
      </section>
     <!-- Services -->
     <section id="services" class="services">
-        <h2 class="section-title">Services</h2>
-        <p class="section-sub">What I offer</p>
+        <h2 class="section-title" data-i18n="services_title">Services</h2>
+        <p class="section-sub" data-i18n="services_sub">What I offer</p>
         <div class="services-grid">
             <article class="service-card" data-animate>
                 <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <h3>Web Security</h3>
-                <p>Comprehensive web application security assessments and secure design reviews.</p>
+                <h3 data-i18n="svc_web">Web Security</h3>
+                <p data-i18n="svc_web_desc">Comprehensive web application security assessments and secure design reviews.</p>
             </article>
             <article class="service-card" data-animate>
                 <div class="service-icon"><i class="fa-solid fa-bug"></i></div>
-                <h3>Bug Bounty</h3>
-                <p>Responsible vulnerability discovery and coordinated disclosure through bounty programs.</p>
+                <h3 data-i18n="svc_bug">Bug Bounty</h3>
+                <p data-i18n="svc_bug_desc">Responsible vulnerability discovery and coordinated disclosure through bounty programs.</p>
             </article>
             <article class="service-card" data-animate>
                 <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <h3>Penetration Testing</h3>
-                <p>Hands-on pentests simulating real-world attacks to find exploitable weaknesses.</p>
+                <h3 data-i18n="svc_pentest">Penetration Testing</h3>
+                <p data-i18n="svc_pentest_desc">Hands-on pentests simulating real-world attacks to find exploitable weaknesses.</p>
             </article>
             <article class="service-card" data-animate>
                 <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
-                <h3>Cybersecurity Consulting</h3>
-                <p>Strategy, policy, and remediation guidance to build resilient security programs.</p>
+                <h3 data-i18n="svc_consult">Cybersecurity Consulting</h3>
+                <p data-i18n="svc_consult_desc">Strategy, policy, and remediation guidance to build resilient security programs.</p>
             </article>
         </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-sub">Selected work</p>
+        <h2 class="section-title" data-i18n="projects_title">Projects</h2>
+        <p class="section-sub" data-i18n="projects_sub">Selected work</p>
         <div class="project-controls">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Security</button>
-            <button class="filter-btn" data-filter="tools">Tools</button>
+            <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+            <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web Security</button>
+            <button class="filter-btn" data-filter="tools" data-i18n="filter_tools">Tools</button>
         </div>
         <div class="projects-grid">
             <article class="project-card" data-category="web" data-animate>
                 <div class="project-image" style="background-image: url('images/1345249.png')"></div>
                 <div class="project-body">
-                    <h3>Web App Harden</h3>
-                    <p>Full-stack hardening and vulnerability remediation for a high-traffic web application.</p>
-                    <a class="btn" href="#">View Details</a>
+                    <h3 data-i18n="proj_1_title">Web App Harden</h3>
+                    <p data-i18n="proj_1_desc">Full-stack hardening and vulnerability remediation for a high-traffic web application.</p>
+                    <a class="btn" href="#" data-i18n="proj_view">View Details</a>
                 </div>
             </article>
             <article class="project-card" data-category="tools" data-animate>
                 <div class="project-image" style="background-image: url('images/wallpaperflare.com_wallpaper.jpg')"></div>
                 <div class="project-body">
-                    <h3>Recon Toolkit</h3>
-                    <p>A developer-friendly reconnaissance toolkit used for triage and asset discovery.</p>
-                    <a class="btn" href="#">See More</a>
+                    <h3 data-i18n="proj_2_title">Recon Toolkit</h3>
+                    <p data-i18n="proj_2_desc">A developer-friendly reconnaissance toolkit used for triage and asset discovery.</p>
+                    <a class="btn" href="#" data-i18n="proj_view">See More</a>
                 </div>
             </article>
             <article class="project-card" data-category="web" data-animate>
                 <div class="project-image" style="background-image: url('images/photo_2025-08-30_22-56-55.jpg')"></div>
                 <div class="project-body">
-                    <h3>API Security Audit</h3>
-                    <p>Identified broken auth and improved token handling for a microservices API.</p>
-                    <a class="btn" href="#">View Details</a>
+                    <h3 data-i18n="proj_3_title">API Security Audit</h3>
+                    <p data-i18n="proj_3_desc">Identified broken auth and improved token handling for a microservices API.</p>
+                    <a class="btn" href="#" data-i18n="proj_view">View Details</a>
                 </div>
             </article>
             <article class="project-card" data-category="tools" data-animate>
                 <div class="project-image" style="background-image: url('images/wallpaperflare.com_wallpaper (1).jpg')"></div>
                 <div class="project-body">
-                    <h3>Phishing Simulator</h3>
-                    <p>Internal tool to help train staff and measure risk through simulated campaigns.</p>
-                    <a class="btn" href="#">See More</a>
+                    <h3 data-i18n="proj_4_title">Phishing Simulator</h3>
+                    <p data-i18n="proj_4_desc">Internal tool to help train staff and measure risk through simulated campaigns.</p>
+                    <a class="btn" href="#" data-i18n="proj_view">See More</a>
                 </div>
             </article>
         </div>
@@ -113,31 +119,31 @@
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-sub">Let's work together</p>
+        <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+        <p class="section-sub" data-i18n="contact_sub">Let's work together</p>
         <div class="contact-grid">
             <form id="contact-form" novalidate>
                 <div class="form-row">
-                    <label for="name">Name</label>
+                    <label for="name" data-i18n="label_name">Name</label>
                     <input type="text" id="name" name="name" required>
                     <small class="error" data-for="name"></small>
                 </div>
                 <div class="form-row">
-                    <label for="email">Email</label>
+                    <label for="email" data-i18n="label_email">Email</label>
                     <input type="email" id="email" name="email" required>
                     <small class="error" data-for="email"></small>
                 </div>
                 <div class="form-row">
-                    <label for="message">Message</label>
+                    <label for="message" data-i18n="label_message">Message</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
                     <small class="error" data-for="message"></small>
                 </div>
-                <button type="submit" class="btn submit">Send Message</button>
+                <button type="submit" class="btn submit" data-i18n="btn_send">Send Message</button>
                 <div id="form-success" class="form-success" role="status" aria-live="polite"></div>
             </form>
             <div class="contact-info" data-animate>
-                <h3>Connect</h3>
-                <p>Find me on social media or send an email.</p>
+                <h3 data-i18n="connect_title">Connect</h3>
+                <p data-i18n="connect_sub">Find me on social media or send an email.</p>
                 <div class="social-list">
                     <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>

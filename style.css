@@ -159,6 +159,15 @@ header.scrolled{
     cursor: pointer;
 }
 
+.header-actions select{
+    padding:6px 8px;
+    border-radius:6px;
+    border:1px solid rgba(0,0,0,0.08);
+    margin-right:8px;
+    background: var(--card);
+    color: var(--text);
+}
+
 /* Section headings */
 .section-title{
     font-size: 2rem;
@@ -280,3 +289,10 @@ input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #d1d5d
     header{padding:12px 18px}
     .nvagation a{display:none}
 }
+
+/* RTL tweaks */
+body.rtl, html[dir="rtl"] body{
+    direction: rtl;
+}
+body.rtl .nvagation a{padding-left:0;padding-right:30px}
+body.rtl .header-actions select{margin-right:0;margin-left:8px}
